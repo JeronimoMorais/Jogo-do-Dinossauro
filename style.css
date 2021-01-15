@@ -1,0 +1,47 @@
+body {
+    background: white
+}
+
+.dinossauro {
+    width: 60px;
+    height: 60px;
+    position: absolute;  /*absolute define que o elemento ficará na posição definida independente do que houver em volta.*/
+    bottom: 0;
+    left: 30px;
+    background-image: url(dinossauro.png);
+}
+
+.cactos {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 0;
+    background-image: url(cactos.png);
+}
+
+.game-over {
+    background-image: url(game_over.png);
+    width: 701px;
+    height: 561px;
+    margin: 0 auto;
+}
+
+@keyframes slideright {
+    from {
+        background-position: 70000%;
+    }
+    to {
+        background-position: 0;
+    }
+}
+
+.background {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-image: url(background2.png);
+    background-repeat: repeat-x;
+    animation: slideright 600s infinite linear;
+    width: 100%;
+    height: 490px;
+}
